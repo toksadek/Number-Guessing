@@ -7,10 +7,10 @@ const generateTarget= () =>
 { return Math.floor( Math.random()*10 );}
 
 //function to compare guesses and determine winner
-const compareGuesses = (currentHumanGuess, computerGuess, target) => { 
-  const currentHumanGuess = Maths.abs(currentHumanGuess - target);
-  const computerGuess = Maths.abs(computerGuess - target);
-  if (currentHumanGuess <= computerGuess) {
+const compareGuesses = (human, computer, target) => { 
+  const humanG = Maths.abs(human - target);
+  const computerG = Maths.abs(computer - target);
+  if (humanG <= computerG) {
     return true;}
  else {
    return false;
